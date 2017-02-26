@@ -4,6 +4,7 @@
 	/*top: -36%;
 	left:-18%%;*/
 	z-index:12;
+	padding:  : 10%;
 	/*position:absolute;*/
 	-ms-transform: translate(50px, 100px); /* IE 9 */
 	-webkit-transform: translate(50px, 100px); /* Safari */
@@ -15,6 +16,11 @@
 
 .player {
 	float: right;
+
+	-ms-transform: translate(50px, 100px); /* IE 9 */
+	-webkit-transform: translate(50px, 100px); /* Safari */
+	transform: translate(-50%, 50%);
+	color :#6fc8b7;
 }
 
 .overlayontent {

@@ -288,8 +288,8 @@ a:focus {
 }
 
 .deco-bg--color-4 {
-	background: -webkit-linear-gradient(bottom, #c2f3b0 90%, transparent 90%, transparent);
-	background: linear-gradient(to top, #c2f3b0 90%, transparent 90%, transparent);
+	background: -webkit-linear-gradient(bottom, #6fc8b7 90%, transparent 90%, transparent);
+	background: linear-gradient(to top, #6fc8b7 90%, transparent 90%, transparent);
 }
 
 .deco-bg--color-5 {
