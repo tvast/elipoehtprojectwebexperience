@@ -179,7 +179,7 @@ var cameraz = 0;
 function camera () {
 
     // setInterval(function(){ 
-          for (i = 0; i < 0; i++) { 
+          // for (i = 0; i < 0; i++) { 
       var devant = Math.floor((Math.random() * 80) + 1);
 var derriere = Math.floor((Math.random() * 80) + 1);
 var hauteur = Math.floor((Math.random() * 80) + 1);
@@ -188,7 +188,7 @@ var cameraz = devant,
     camerax = derriere,
     cameray = hauteur,
     tick = 80;    
-}
+// }
     // }, 20);
 
 
@@ -288,21 +288,23 @@ var loopAnim
 function myFunction() {
   
   // console.log(time); // => duration, in seconds
-  var i=0;
-  for (i = 0; i <1 ; i++) { 
+  // var i=2;
+  // for (i = 0; i < 0 ; i++) { 
      // var myVar setInterval(function(){ 
    hopa = hopalong(random(AMIN, AMAX), 
     random(BMIN, BMAX), 
     random(CMIN, CMAX), 
     random(DMIN, DMAX), 
     random(EMIN, EMAX), hop.numPoints);
-}
+
+   // return hopa =0
+// }
 
 }
 //loop it and launch it on click
-function lauchAnim() {
-var loopAnim = setInterval(function(){ myFunction() }, 1000);
-}
+// function lauchAnim() {
+// var loopAnim = setInterval(function(){ myFunction() }, 100);
+// }
 
 // function redraw(){
 //   var context= document.getElementsByTagName('canvas')[0].getContext("2d");
@@ -317,14 +319,34 @@ function myStopFunction() {
   console.log('ca marche')
 }
 // clear canvas
-function clearCanva() {
-  var myAudio = document.getElementById("player");
-  var rate = myAudio.defaultPlaybackRate;
-  // console.log(rate)
-  var time = 1/rate;
-  var long = myAudio.duration;
-var loopAnim = setInterval(function(){ myStopFunction() },long );
+// function clearCanva() {
+//   var myAudio = document.getElementById("player");
+//   // var rate = myAudio.defaultPlaybackRate;
+//   // // console.log(rate)
+//   // var time = 1/rate;
+//   // var long = myAudio.duration;
+// var loopAnim = setInterval(function(){ myStopFunction() },5000 );
+// }
+
+//sound control
+
+function closeAndStop() {
+
+  $('#modal1').modal('close');
+  document.getElementById('player').pause()
+
 }
+
+function launchAndClear() {
+  
+  setInterval(function(){ 
+
+  myFunction()
+  myStopFunction()
+
+   },5 );
+}
+
 
 
 

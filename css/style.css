@@ -1,0 +1,29 @@
+.overlay {
+	background-color: white;
+	width : 40%;	
+	/*top: -36%;
+	left:-18%%;*/
+	z-index:12;
+	/*position:absolute;*/
+	-ms-transform: translate(50px, 100px); /* IE 9 */
+	-webkit-transform: translate(50px, 100px); /* Safari */
+	transform: translate(20%, 20%);
+	/*opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */*/
+
+}
+
+.player {
+	float: right;
+}
+
+.overlayontent {
+	width : 40%;	
+	top: -20%;
+	left:-18%%;
+	z-index:12;
+	position:absolute;
+	-ms-transform: translate(50px, 100px); /* IE 9 */
+	-webkit-transform: translate(50px, 100px); /* Safari */
+	transform: translate(20%, 20%);
+}
