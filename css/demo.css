@@ -7,7 +7,7 @@
 body {
 	font-family: 'Inconsolata', monospace;
 	color: #080811;
-	/*background: #f0f0f0;*/
+	background: #f0f0f0;
 }
 
 a {
@@ -89,7 +89,7 @@ a:focus {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
+	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
@@ -102,8 +102,8 @@ a:focus {
 }
 
 .section--flow {
-	/*padding: 3em 0;*/
-	/*min-height: 100vh;*/
+	padding: 3em 0;
+	min-height: 100vh;
 }
 
 .section--related {
@@ -222,7 +222,7 @@ a:focus {
 
 /* Content */
 
-/*.content {
+.content {
 	margin: auto;
 	max-width: 1200px;
 	min-height: 600px;
@@ -238,10 +238,10 @@ a:focus {
 	justify-content: center;
 	flex: none;
 	position: relative;
-}*/
+}
 
 .title {
-	/*position: absolute;*/
+	position: absolute;
 	font-size: 8vw;
 	margin: 0;
 	pointer-events: none;
@@ -288,8 +288,8 @@ a:focus {
 }
 
 .deco-bg--color-4 {
-	background: -webkit-linear-gradient(bottom, #6fc8b7 90%, transparent 90%, transparent);
-	background: linear-gradient(to top, #6fc8b7 90%, transparent 90%, transparent);
+	background: -webkit-linear-gradient(bottom, #c2f3b0 90%, transparent 90%, transparent);
+	background: linear-gradient(to top, #c2f3b0 90%, transparent 90%, transparent);
 }
 
 .deco-bg--color-5 {
