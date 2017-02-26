@@ -6,16 +6,16 @@
 /* options */
   // var h = Math.floor((Math.random() * 3000) + 100);
 
-
+  
 var hop = {
 
   drawWidth: Math.ceil(10 * window.innerWidth / 1000), // ellipse radius (px)
-  numPoints: 150, // attractor iterations
-  frameRate: 3,
-  fillAlpha: 0.50,
+  numPoints: 2000, // attractor iterations
+  frameRate: 30,
+  fillAlpha: 0.25,
   scale: 10,
-  layers: 3,
-  layerSeparation: 2,
+  layers: 7,
+  layerSeparation: 10,
   layerRandomness: 0.90
 };
 
@@ -279,18 +279,17 @@ function windowResized() {
 var songSpeed = document.getElementById("player").defaultPlaybackRate
 var intervale = 3000
 var time
+var loopAnim 
 
-var myVar = setInterval(function(){ myFunction() }, 100);
+
+
+//generate a loop of hopalong
 
 function myFunction() {
-  var myAudio = document.getElementById("player");
-  var rate = myAudio.defaultPlaybackRate;
-  // console.log(rate)
-  var time = 1/rate;
-  var long = myAudio.duration;
+  
   // console.log(time); // => duration, in seconds
   var i=0;
-  for (i = 0; i < long ; i++) { 
+  for (i = 0; i <1 ; i++) { 
      // var myVar setInterval(function(){ 
    hopa = hopalong(random(AMIN, AMAX), 
     random(BMIN, BMAX), 
@@ -300,18 +299,31 @@ function myFunction() {
 }
 
 }
-
-function redraw(){
-  var context= document.getElementsByTagName('canvas')[0].getContext("2d");
-  context.clearRect(0, 0, context.canvas.width, context.canvas.height); 
+//loop it and launch it on click
+function lauchAnim() {
+var loopAnim = setInterval(function(){ myFunction() }, 1000);
 }
+
+// function redraw(){
+//   var context= document.getElementsByTagName('canvas')[0].getContext("2d");
+//   context.clearRect(0, 0, context.canvas.width, context.canvas.height); 
+// }
   // Clears the canvas
 
 function myStopFunction() {
-    clearInterval(myVar);
+    clearInterval(loopAnim);
    var context= document.getElementsByTagName('canvas')[0].getContext("2d");
   context.clearRect(0, 0, context.canvas.width, context.canvas.height);  
   console.log('ca marche')
+}
+// clear canvas
+function clearCanva() {
+  var myAudio = document.getElementById("player");
+  var rate = myAudio.defaultPlaybackRate;
+  // console.log(rate)
+  var time = 1/rate;
+  var long = myAudio.duration;
+var loopAnim = setInterval(function(){ myStopFunction() },long );
 }
 
 
